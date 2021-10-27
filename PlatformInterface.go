@@ -3,7 +3,7 @@ package imgui
 import (
 	"image"
 
-	"github.com/go-gl/glfw/v3.3/glfw"
+	"github.com/HACKERALERT/glfw/v3.3/glfw"
 )
 
 type Platform interface {
