@@ -6,10 +6,10 @@ import (
 	"image"
 	"unsafe"
 
-	"github.com/HACKERALERT/gl/v3.2-core/gl"
+	"github.com/go-gl/gl/v3.2-core/gl"
 )
 
-// OpenGL3 implements a renderer based on github.com/HACKERALERT/gl (v3.2-core).
+// OpenGL3 implements a renderer based on github.com/go-gl/gl (v3.2-core).
 type OpenGL3 struct {
 	imguiIO IO
 
