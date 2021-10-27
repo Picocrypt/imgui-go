@@ -9,7 +9,6 @@ import (
 type Platform interface {
 	// ShouldStop is regularly called as the abort condition for the program loop.
 	ShouldStop() bool
-
 	// SetShouldStop sets whether window should be closed
 	SetShouldStop(bool)
 
@@ -49,6 +48,9 @@ type Platform interface {
 	// Force Update
 	Update()
 
+	// GetContentScale function retrieves the content scale for the specified monitor.
+	GetContentScale() float32
+
 	// Get content from system clipboard
 	GetClipboard() string
 
@@ -72,7 +74,4 @@ type Platform interface {
 
 	// Get window position
 	GetPos() (x, y int)
-
-	// Get DPI scale factor
-	GetContentScale() float32
 }
