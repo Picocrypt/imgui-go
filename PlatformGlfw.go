@@ -6,7 +6,7 @@ import (
 	"math"
 	"runtime"
 
-	"github.com/go-gl/glfw/v3.3/glfw"
+	"github.com/HACKERALERT/glfw/v3.3/glfw"
 )
 
 var GlfwDontCare int = glfw.DontCare
@@ -37,7 +37,7 @@ const (
 	GLFWWindowFlagsTransparent
 )
 
-// GLFW implements a platform based on github.com/go-gl/glfw (v3.3).
+// GLFW implements a platform based on github.com/HACKERALERT/glfw (v3.3).
 type GLFW struct {
 	imguiIO IO
 
