@@ -71,13 +71,10 @@ char const *iggGetVersion()
 void iggShowDemoWindow(IggBool *open)
 {
    BoolWrapper openArg(open);
-
-   ImGui::ShowDemoWindow(openArg);
 }
 
 void iggShowUserGuide(void)
 {
-   ImGui::ShowUserGuide();
 }
 
 IggBool iggBegin(char const *id, IggBool *open, int flags)
