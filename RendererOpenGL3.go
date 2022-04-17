@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"image"
+	"unsafe"
 
 	"github.com/HACKERALERT/gl/v3.2-core/gl"
 )
@@ -187,7 +188,7 @@ func (renderer *OpenGL3) Render(displaySize [2]float32, framebufferSize [2]float
 				gl.TexParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, renderer.textureMagFilter) // magnification filter
 				clipRect := cmd.ClipRect()
 				gl.Scissor(int32(clipRect.X), int32(fbHeight)-int32(clipRect.W), int32(clipRect.Z-clipRect.X), int32(clipRect.W-clipRect.Y))
-				gl.DrawElementsBaseVertexWithOffset(gl.TRIANGLES, int32(cmd.ElementCount()), uint32(drawType),uintptr(cmd.IdxOffset()*uint(indexSize)), int32(cmd.VertexOffset()))
+				gl.DrawElements(gl.TRIANGLES, int32(cmd.ElementCount()), uint32(drawType), unsafe.Pointer(indexBufferOffset))
 			}
 			indexBufferOffset += uintptr(cmd.ElementCount() * indexSize)
 		}
