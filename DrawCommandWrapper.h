@@ -12,7 +12,6 @@ extern void iggDrawCommandGetClipRect(IggDrawCmd handle, IggVec4 *rect);
 extern void iggDrawCommandGetTextureID(IggDrawCmd handle, IggTextureID *id);
 extern IggBool iggDrawCommandHasUserCallback(IggDrawCmd handle);
 extern void iggDrawCommandCallUserCallback(IggDrawCmd handle, IggDrawList listHandle);
-extern void iggDrawCommandGetVertexOffset(IggDrawCmd handle, unsigned int *count);
 
 #ifdef __cplusplus
 }
