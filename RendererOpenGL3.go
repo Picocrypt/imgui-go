@@ -4,7 +4,6 @@ import (
 	"errors"
 	"fmt"
 	"image"
-	"unsafe"
 
 	"github.com/HACKERALERT/gl/v3.2-core/gl"
 )
