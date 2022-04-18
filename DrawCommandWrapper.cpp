@@ -8,6 +8,11 @@ void iggDrawCommandGetElementCount(IggDrawCmd handle, unsigned int *count)
    *count = cmd->ElemCount;
 }
 
+void iggDrawCommandGetVertexOffset(IggDrawCmd handle, unsigned int *count) {
+  ImDrawCmd *cmd = reinterpret_cast<ImDrawCmd *>(handle);
+  *count = cmd->VtxOffset;
+}
+
 void iggDrawCommandGetClipRect(IggDrawCmd handle, IggVec4 *rect)
 {
    ImDrawCmd *cmd = reinterpret_cast<ImDrawCmd *>(handle);

@@ -6,6 +6,15 @@ import "C"
 // DrawCommand describes one GPU call (or a callback).
 type DrawCommand uintptr
 
+// VertexOffset is the start offset in vertex buffer.
+// ImGuiBackendFlags_RendererHasVtxOffset: false always 0,
+// otherwise may be >0 to support meshes larger than 64K vertices with 16-bit indices.
+func (cmd DrawCommand) VertexOffset() int {
+	var count C.uint
+	C.iggDrawCommandGetVertexOffset(cmd.handle(), &count)
+	return int(count)
+}
+
 func (cmd DrawCommand) handle() C.IggDrawCmd {
 	return C.IggDrawCmd(cmd)
 }
