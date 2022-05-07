@@ -7,7 +7,7 @@ extern "C"
 
 typedef int IggBool;
 typedef float IggFloat;
-typedef uintptr_t IggTextureID;
+typedef void *IggTextureID;
 
 typedef void *IggContext;
 typedef void *IggDrawCmd;
