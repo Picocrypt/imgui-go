@@ -6,6 +6,7 @@
 extern "C" {
 #endif
 
+extern void iggClearActiveID(void);
 extern IggContext iggCreateContext(IggFontAtlas sharedFontAtlas);
 extern void iggDestroyContext(IggContext context);
 extern IggContext iggGetCurrentContext();
