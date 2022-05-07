@@ -4,3 +4,4 @@
 // of the core imgui header with all the various options.
 
 #include "imgui.h"
+#include "imgui_internal.h"
