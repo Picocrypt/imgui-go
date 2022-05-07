@@ -2,6 +2,11 @@
 #include "imguiWrapper.h"
 #include "WrapperConverter.h"
 
+void iggClearActiveID()
+{
+   ImGui::ClearActiveID();
+}
+
 IggContext iggCreateContext(IggFontAtlas sharedFontAtlas)
 {
    ImGuiContext *context = ImGui::CreateContext(reinterpret_cast<ImFontAtlas *>(sharedFontAtlas));
