@@ -518,5 +518,5 @@ func ImPlotUse24HourClock(clock24h bool) {
 }
 
 func ImPlotSetPlotYAxis(yAxis ImPlotYAxis) {
-  C.iggImPlotSetPlotYAxis(C.int(yAxis))
+	C.iggImPlotSetPlotYAxis(C.int(yAxis))
 }

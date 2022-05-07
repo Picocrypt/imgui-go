@@ -11,7 +11,7 @@ import (
 )
 
 // Clear focus from currently focused widget so that owned data can be modified
-func ClearActiveID(){
+func ClearActiveID() {
 	C.iggClearActiveID()
 }
 
