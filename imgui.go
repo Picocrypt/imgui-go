@@ -10,6 +10,11 @@ import (
 	"math"
 )
 
+// Clear focus from currently focused widget so that owned data can be modified
+func ClearActiveID(){
+	C.iggClearActiveID()
+}
+
 // Version returns a version string e.g. "1.23".
 func Version() string {
 	return C.GoString(C.iggGetVersion())
