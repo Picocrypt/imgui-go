@@ -60,11 +60,6 @@ func NewOpenGL3(io IO, contentScale float32) (*OpenGL3, error) {
 }
 
 // Dispose cleans up the resources.
-func (renderer *OpenGL3) Scale(contentScale float32) {
-	renderer.contentScale = contentScale
-}
-
-// Dispose cleans up the resources.
 func (renderer *OpenGL3) Dispose() {
 	renderer.invalidateDeviceObjects()
 }
