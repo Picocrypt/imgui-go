@@ -20,4 +20,6 @@ type Renderer interface {
 	ReleaseImage(textureId TextureID)
 	// Dispose
 	Dispose()
+	// Change the content scale
+	Rescale(contentScale float32)
 }
