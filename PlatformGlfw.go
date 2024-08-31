@@ -6,7 +6,7 @@ import (
 	"math"
 	"runtime"
 
-	"github.com/HACKERALERT/glfw/v3.3/glfw"
+	"github.com/Picocrypt/glfw/v3.3/glfw"
 )
 
 var GlfwDontCare int = glfw.DontCare
