@@ -1,6 +1,6 @@
 module github.com/HACKERALERT/imgui-go
 
-go 1.16
+go 1.18
 
 require (
 	github.com/Picocrypt/gl v0.0.0-20240831002619-6531d2bba5fc
