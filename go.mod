@@ -1,4 +1,4 @@
-module github.com/HACKERALERT/imgui-go
+module github.com/Picocrypt/imgui-go
 
 go 1.18
 
