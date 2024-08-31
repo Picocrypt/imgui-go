@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"image"
 
-	"github.com/HACKERALERT/gl/v3.2-core/gl"
+	"github.com/Picocrypt/gl/v3.2-core/gl"
 )
 
-// OpenGL3 implements a renderer based on github.com/HACKERALERT/gl (v3.2-core).
+// OpenGL3 implements a renderer based on github.com/Picocrypt/gl (v3.2-core).
 type OpenGL3 struct {
 	imguiIO IO
 
