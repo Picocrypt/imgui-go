@@ -1,8 +1,8 @@
 module github.com/Picocrypt/imgui-go
 
-go 1.18
+go 1.24.0
 
 require (
-	github.com/Picocrypt/gl v0.0.0-20250410154226-55bdd7d785fc
-	github.com/Picocrypt/glfw/v3.3/glfw v0.0.0-20250410154351-5db5bbd64322
+	github.com/Picocrypt/gl v0.0.0-20250412234430-767b58dbf936
+	github.com/Picocrypt/glfw/v3.3/glfw v0.0.0-20250412234750-7b96bfdb8dd8
 )
